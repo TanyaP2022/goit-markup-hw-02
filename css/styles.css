@@ -1,0 +1,231 @@
+/*переменные*/
+:root {
+  --brend-color: #757575;
+  --blue-color: #2196f3;
+  --style-color: #212121;
+  --white-color: #ffffff;
+}
+/*общие стили*/
+
+.link {
+  list-style: none;
+}
+
+/*клас для боди index.html*/
+
+.page {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--brend-color);
+}
+
+/*клас для боди portfolio.html*/
+.portfolio-page {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--brend-color);
+}
+
+/*лого*/
+.logo:hover,
+.logo:focus {
+  text-decoration: underline;
+}
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+  color: var(--blue-color);
+  text-decoration: none;
+}
+/*другой цвет для лого*/
+.logo-span {
+  color: #000;
+}
+.logo-span-footer {
+  color: var(--white-color);
+}
+
+/*стили для навигации*/
+.navbar-link:hover,
+.navbar-link:focus {
+  color: var(--blue-color);
+  text-decoration: underline;
+}
+
+.nav {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+}
+.navbar-link {
+  color: var(--style-color);
+  text-decoration: none;
+}
+.connect-mail {
+  color: var(--blue-color);
+}
+.connect-phone {
+  color: var(--brend-color);
+}
+
+/*стили для героя*/
+.hero {
+  background: #2f303a;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1, 36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.hero-btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1, 87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background: var(--blue-color);
+  cursor: pointer;
+}
+/*скрыть заголовок*/
+.about-hero {
+  display: none;
+}
+/*чем занимаемся*/
+
+.about-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--style-color);
+}
+.about-subtitle {
+  font-size: 14px;
+  line-height: 1, 71;
+  letter-spacing: 0.03em;
+  color: var(--brend-color);
+}
+/*услуги*/
+.box-hero {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1, 17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--style-color);
+}
+/*наша команда*/
+.team-hero {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1, 17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--style-color);
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+  color: var(--style-color);
+}
+.team-position {
+  font-size: 16px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+  color: var(--brend-color);
+}
+/*портфолио*/
+/*скрыть заголовок*/
+.portfolio {
+  display: none;
+}
+.portfolio-btn-item:hover,
+.portfolio-btn-item:focus {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+.portfolio-btn-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.portfolio-box-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2, 00;
+  letter-spacing: 0.06em;
+  color: var(--style-color);
+}
+.portfolio-box-title {
+  font-size: 16px;
+  line-height: 1, 87;
+  letter-spacing: 0.03em;
+  color: var(--brend-color);
+}
+/*подвал*/
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  font-family: Raleway;
+  font-style: Bold;
+  font-size: 26px;
+  line-height: 1, 19;
+  vertical-align: Top;
+  color: var(--blue-color);
+  text-decoration: none;
+}
+.logo-footer:hover,
+.logo-footer:focus {
+  text-decoration: underline;
+}
+.contact-local {
+  font-size: 14px;
+  line-height: 1, 71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  text-decoration: none;
+}
+.contact-mail,
+.contact-tel {
+  font-size: 14px;
+  line-height: 1, 71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.contact-local:hover,
+.contact-mail:hover,
+.contact-tel:hover,
+.contact-local:focus,
+.contact-mail:focus,
+.contact-tel:focus {
+  text-decoration: underline;
+}
