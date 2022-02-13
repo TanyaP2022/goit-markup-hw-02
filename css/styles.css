@@ -4,6 +4,10 @@
   --blue-color: #2196f3;
   --style-color: #212121;
   --white-color: #ffffff;
+  --black-color: #000;
+  --hero-color: #2f303a;
+  --phone-color: rgba(255, 255, 255, 0.6);
+  --btn-color: #f5f4fa;
 }
 /*общие стили*/
 
@@ -11,23 +15,15 @@
   list-style: none;
 }
 
-/*клас для боди index.html*/
+/*клас для боди*/
 
-.page {
+.body {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   color: var(--brend-color);
+  background-color: var(--white-color);
 }
-
-/*клас для боди portfolio.html*/
-.portfolio-page {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  color: var(--brend-color);
-}
-
 /*лого*/
 .logo:hover,
 .logo:focus {
@@ -35,17 +31,16 @@
 }
 .logo {
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--blue-color);
   text-decoration: none;
 }
 /*другой цвет для лого*/
 .logo-span {
-  color: #000;
+  color: var(--black-color);
 }
 .logo-span-footer {
   color: var(--white-color);
@@ -60,15 +55,23 @@
 
 .nav {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .navbar-link {
   color: var(--style-color);
   text-decoration: none;
+}
+.connect-mail,
+.connect-phone {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .connect-mail {
   color: var(--blue-color);
@@ -79,27 +82,41 @@
 
 /*стили для героя*/
 .hero {
-  background: #2f303a;
+  background-color: var(--hero-color);
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
 }
 .hero-title {
+  position: absolute;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 36;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
 }
 .hero-btn {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
   font-weight: bold;
   font-size: 16px;
-  line-height: 1, 87;
-  display: flex;
+  line-height: 1.87;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
-  background: var(--blue-color);
+  background-color: var(--blue-color);
   cursor: pointer;
 }
 /*скрыть заголовок*/
@@ -110,47 +127,39 @@
 
 .about-title {
   font-weight: bold;
-  font-size: 14px;
-  line-height: 1, 14;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--style-color);
 }
 .about-subtitle {
-  font-size: 14px;
-  line-height: 1, 71;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
   color: var(--brend-color);
 }
 /*услуги*/
 .box-hero {
   font-weight: bold;
   font-size: 36px;
-  line-height: 1, 17;
+  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--style-color);
 }
 /*наша команда*/
 .team-hero {
   font-weight: bold;
   font-size: 36px;
-  line-height: 1, 17;
+  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--style-color);
 }
 .team-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 19;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
   color: var(--style-color);
 }
 .team-position {
   font-size: 16px;
-  line-height: 1, 19;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
   color: var(--brend-color);
 }
 /*портфолио*/
@@ -163,12 +172,16 @@
   color: var(--white-color);
   background-color: var(--blue-color);
 }
+.portfolio-btn-list {
+  background-color: var(--btc-color);
+  border-radius: 4px;
+}
 .portfolio-btn-item {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 62;
+  line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
   border: none;
@@ -178,26 +191,25 @@
 .portfolio-box-name {
   font-weight: bold;
   font-size: 18px;
-  line-height: 2, 00;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--style-color);
 }
 .portfolio-box-title {
   font-size: 16px;
-  line-height: 1, 87;
-  letter-spacing: 0.03em;
+  line-height: 1.87;
   color: var(--brend-color);
 }
 /*подвал*/
 .footer {
-  background-color: #2f303a;
+  background-color: var(--hero-color);
 }
 
 .logo-footer {
   font-family: Raleway;
   font-style: Bold;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   vertical-align: Top;
   color: var(--blue-color);
   text-decoration: none;
@@ -207,20 +219,19 @@
   text-decoration: underline;
 }
 .contact-local {
-  font-size: 14px;
-  line-height: 1, 71;
-  letter-spacing: 0.03em;
+  font-style: normal;
+  line-height: 1.71;
   color: var(--white-color);
   text-decoration: none;
 }
 .contact-mail,
 .contact-tel {
-  font-size: 14px;
-  line-height: 1, 71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--phone-color);
   text-decoration: none;
 }
+/*
 .contact-local:hover,
 .contact-mail:hover,
 .contact-tel:hover,
@@ -229,3 +240,4 @@
 .contact-tel:focus {
   text-decoration: underline;
 }
+*/
