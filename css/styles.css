@@ -18,7 +18,7 @@
 /*клас для боди*/
 
 .body {
-  font-family: Roboto;
+  font-family: roboto;
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--brend-color);
@@ -27,10 +27,10 @@
 /*лого*/
 .logo:hover,
 .logo:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .logo {
-  font-family: Raleway;
+  font-family: raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -50,11 +50,11 @@
 .navbar-link:hover,
 .navbar-link:focus {
   color: var(--blue-color);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .nav {
-  font-family: Roboto;
+  font-family: roboto;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -66,17 +66,21 @@
 .connect-mail,
 .connect-phone {
   text-decoration: none;
-  font-family: Roboto;
+  font-family: roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.connect-mail {
+.connect-mail:hover,
+.connect-mail:focus,
+.connect-phone:hover,
+.connect-phone:focus {
   color: var(--blue-color);
 }
-.connect-phone {
+.connect-phone,
+.connect-mail {
   color: var(--brend-color);
 }
 
@@ -176,8 +180,17 @@
   background-color: var(--btc-color);
   border-radius: 4px;
 }
+.portfolio-box-link,
+.portfolio-box-list,
+.portfolio-box-name,
+.portfolio-box-title {
+  text-decoration: none;
+}
+.portfolio-box-list {
+  background-color: var(--white-color);
+}
 .portfolio-btn-item {
-  font-family: Roboto;
+  font-family: roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -200,23 +213,25 @@
   line-height: 1.87;
   color: var(--brend-color);
 }
+
 /*подвал*/
 .footer {
   background-color: var(--hero-color);
 }
 
 .logo-footer {
-  font-family: Raleway;
-  font-style: Bold;
+  font-family: raleway;
+  font-style: normal;
+  font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  vertical-align: Top;
+  vertical-align: top;
   color: var(--blue-color);
   text-decoration: none;
 }
 .logo-footer:hover,
 .logo-footer:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .contact-local {
   font-style: normal;
